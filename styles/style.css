@@ -1,0 +1,57 @@
+
+html {
+  background-color: black;
+  font-family: 'hind', serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: whitesmoke;
+}
+
+body {
+  padding: 0 20px 20px 0px;
+  border-left: 5px solid whitesmoke;
+}
+
+h1 {
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin: 60px 0;
+}
+.light {
+  font-weight: 300;
+}
+.work {
+  margin-bottom: 80px;
+}
+.work-details {
+  margin-top: 0;
+  margin-left: 38px;
+  font-size: 22px;
+}
+
+#work-name {
+  font-size: 30px;
+}
+#line {
+  background-color: whitesmoke;
+  margin-bottom: 9px;
+  margin-left: 0px;
+  margin-right: 8px;
+}
+
+
+
+details{
+  display: inline-block;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+  display: none;
+}
