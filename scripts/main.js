@@ -1,6 +1,6 @@
-let Pieces = ['Dori', "Mobile", "Tabur"]
+let pieces = ['Dori', "Mobile", "Tabur"]
 
-let Pieces_map = {
+let PiecesMap = {
 	'Dori': {
 		workSummary: "Dori Shafriri",
 		workYear: "2022",
@@ -18,16 +18,14 @@ let Pieces_map = {
 		workSummary: "Tabur",
 		workYear: "2018",
 		workMaterial: "choir and percussion",
-		workDetails: "within the void you will find the sound of voice and steel ecoing back from the walls. Premiered by Tabur Choir",
+		workDetails: "Within the void you will find the sound of voice and steel ecoing back from the walls. Premiered by Tabur Choir",
 		src: "images/tabur.jpg"}
 	}
 
-Pieces.forEach(piece => {
-		workSummary = Pieces_map[piece].workSummary
-		workDetails = Pieces_map[piece].workDetails
-		workMaterial = Pieces_map[piece].workMaterial
-		workYear = Pieces_map[piece].workYear
-		src = Pieces_map[piece].src
+pieces.forEach(piece => {
+		for (key in PiecesMap[piece]) {
+			this[key] = PiecesMap[piece][key]
+		}
 		const details = `
 		<div class="work">
 			<details>
