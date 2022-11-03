@@ -8,7 +8,8 @@ html {
 }
 
 body {
-  padding: 0 20px 20px 0px;
+  margin: 20px 5%;
+  padding: 0px 20px 20px 0px;
   border-left: 5px solid whitesmoke;
 }
 
@@ -33,6 +34,7 @@ h2 {
 
 #work-name {
   font-size: 30px;
+  cursor: pointer;
 }
 #line {
   background-color: whitesmoke;
@@ -45,10 +47,20 @@ h2 {
 
 details{
   display: inline-block;
+  padding-right: 25%;
 }
 
 details > summary {
   list-style: none;
+}
+
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateY(-30px)}
+  100%  {opacity: 1; transform: translateY(0)}
 }
 
 details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
