@@ -80,7 +80,7 @@ function countClaps(piece) {
     	clapCounter.className = 'claps-counter'
     	document.getElementById(piece).appendChild(clapCounter)			
     }
-    document.getElementById("clapCounter-"+piece).innerHTML = PiecesMap[piece]['claps']
+    document.getElementById("clapCounter-"+piece).innerHTML = "👏🏼  " + PiecesMap[piece]['claps']
    	
 }
 

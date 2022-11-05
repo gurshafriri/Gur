@@ -82,6 +82,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   padding: 0px;
   margin: 0;
   animation: none;
+  font-weight: 500;
 
 }
 
