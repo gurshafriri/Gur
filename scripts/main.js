@@ -1,4 +1,4 @@
-let pieces = ['Dori', "Mobile", "Tabur"]
+let pieces = ['Dori', "Mobile", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur", "Tabur"]
 
 let PiecesMap = {
 	'Dori': {
@@ -34,7 +34,7 @@ pieces.forEach(piece => {
 		<div class="work">
 			<details id='${piece}'>
 				<summary id="work-name">
-					<canvas id="line" width="30" height="3"></canvas>${workYear} <strong>${workSummary}</strong>, ${workMaterial}</summary>
+					<img src="images/hline.png" class="tick-line">${workYear} <strong>${workSummary}</strong>, ${workMaterial}</summary>
 					<div><p class="work-details">${workDetails}</p> 
 					<img class="work-details" src=${src} width="400" alt="${workSummary}">
 					</div>

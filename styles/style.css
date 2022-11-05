@@ -10,7 +10,7 @@ html {
 body {
   margin: 20px 5%;
   padding: 0px 20px 20px 0px;
-  border-left: 5px solid whitesmoke;
+  /*border-left: 5px solid whitesmoke;*/
 }
 
 h1 {
@@ -40,12 +40,8 @@ h2 {
   font-size: 30px;
   cursor: pointer;
 }
-#line {
-  background-color: whitesmoke;
-  margin-bottom: 9px;
-  margin-left: 0px;
-  margin-right: 8px;
-}
+
+
 
 #clap {
   font-size: 34px;
@@ -121,11 +117,12 @@ details > summary::-webkit-details-marker /* Safari */ {
 
 }
 
-.button-18:hover,
+/*.button-18:hover,
 .button-18:focus { 
   background-color: #16437E;
   color: #ffffff;
 }
+*/
 
 .button-18:active {
   background: #09223b;
@@ -136,4 +133,19 @@ details > summary::-webkit-details-marker /* Safari */ {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
+}
+
+.timeline {
+  position: fixed;
+  left: 4.35%;
+  width: 1%;
+  height: 100%;
+}
+
+.tick-line {
+  margin-bottom: 9px;
+  margin-left: 0px;
+  margin-right: 8px;
+  height: 5px;
+  width: 5%;
 }
